@@ -26,6 +26,7 @@ OrthogonalTiledMapRenderer tilerend;
 public MapEd(World world) {
 	this.mapLoad();
 	this.mapObLoad(world);
+	
 }
 
 public void mapLoad() {
@@ -54,9 +55,10 @@ public void mapObLoad(World world) {
 		
 		fdef.shape=shape;
 		
-		body.createFixture(fdef).setUserData("ground");;
+		body.createFixture(fdef).setUserData("ground");
 		
-
+		
+		Switch.create(world);
 	}
 }
 

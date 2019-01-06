@@ -13,6 +13,7 @@ import com.badlogic.gdx.physics.box2d.World;
 public class Player extends Entities {
 	Vector2 pPos;
 	Body pBody;
+	Animations heroAnim;
 	public Player(World world,int h, int dmg, String type) {
 		super(world,h, dmg, type);
 		this.create();
@@ -50,7 +51,10 @@ Fixture sword= pBody.createFixture(fdef);
 		
 	
 	}
-	
+	public void animCrt_RUN() {
+		heroAnim=new Animations(pBody,"C:\\Users\\Lenovo\\Desktop\\Typhoon\\core\\assets\\Hero Sprite.png",pBody.getPosition().x,pBody.getPosition().y);
+		//System.out.println(pBody.getPosition().x+" y:"+ pBody.getPosition().y);
+	}
 	
 	
 	
