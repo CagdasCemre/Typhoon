@@ -1,4 +1,4 @@
 # Typhoon
 
 
-First game development attempt using libgdx, box2d and Java. :brain:
+First game development attempt using gradle, libgdx, box2d and Java. :brain:
