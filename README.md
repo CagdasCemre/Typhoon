@@ -1,2 +1,4 @@
 # Typhoon
-Spriteları görmek için kamerada /TyphoonVars.PPM i sil
+
+
+First game development attempt using libgdx, box2d and Java. :brain:
